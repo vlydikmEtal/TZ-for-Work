@@ -1,6 +1,5 @@
-import modals from './modules/modal.js';
-import logInputValues from './modules/;ogInputValues.js';
-import checkNumInputs from './modules/checkNumInputs.js';
+import modals from './modules/modal.js'
+import logInputValues from './modules/logInputValues.js'
 
 window.addEventListener('DOMContentLoaded', () => {
   'use strict'

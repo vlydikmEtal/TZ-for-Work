@@ -15,7 +15,7 @@ const modals = () => {
           item.style.display = 'none'
         })
 
-        modal.style.display = 'block'
+        modal.style.display = 'flex'
         document.body.style.overflow = 'hidden'
       })
     })
@@ -44,7 +44,7 @@ const modals = () => {
 
   function showModalByTime(selector, time) {
     setTimeout(() => {
-      document.querySelector(selector).style.display = 'block'
+      document.querySelector(selector).style.display = 'flex'
       document.body.style.overflow = 'hidden'
     }, time)
   }
@@ -54,7 +54,7 @@ const modals = () => {
     '.popup__engineer',
     '.popup__engineer .popup__close',
   )
-  showModalByTime(".popup", 30000);
+  showModalByTime(".popup", 60000);
 }
 
 export default modals
