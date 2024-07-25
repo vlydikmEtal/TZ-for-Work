@@ -5,14 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <title></title>
-    <meta name="description" content="" />
-    <script src="js/script.js" defer></script>
+    <title>Technical task</title>
+    <meta name="description" content="Responsive Bank Loan Web Page" />
+    <script type="module" src="js/script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
       <main class="main">
+        <table class="loan-table">
+          <thead>
+            <tr>
+              <th>Loan Name</th>
+              <th>Interest Rate (%)</th>
+              <th>Term (years)</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Personal Loan</td>
+              <td>7.5</td>
+              <td>5</td>
+              <td><a href="#" class="apply-button">Оформить заявку</a></td>
+            </tr>
+            <tr>
+              <td>Mortgage</td>
+              <td>3.8</td>
+              <td>20</td>
+              <td><a href="#" class="apply-button">Оформить заявку</a></td>
+            </tr>
+            <tr>
+              <td>Car Loan</td>
+              <td>4.2</td>
+              <td>3</td>
+              <td><a href="#" class="apply-button">Оформить заявку</a></td>
+            </tr>
+            <tr>
+              <td>Business Loan</td>
+              <td>6.0</td>
+              <td>10</td>
+              <td><a href="#" class="apply-button">Оформить заявку</a></td>
+            </tr>
+            <tr>
+              <td>Student Loan</td>
+              <td>4.5</td>
+              <td>15</td>
+              <td><a href="#" class="apply-button">Оформить заявку</a></td>
+            </tr>
+          </tbody>
+        </table>
       </main>
+
+      <!-- Modals -->
+      <div class="popup popup__engineer fadeIn" data-modal>
+        <div class="popup__dialog">
+            <div class="popup__content">
+                <button type="button" class="popup__close"><strong>&times;</strong></button>
+                <div class="popup__form">
+                    <form class="form" action="#">
+                      <h2>Оформите бесплатную <br><span>заявку</span></h2>
+                      <input class="form-control form__input" name="user_name" required type="text" placeholder="Введите ваше имя">
+                      <input class="form-control form__input" name="user_phone" required type="text" placeholder="Введите телефон">
+                      <button class="btn-block button" name="submit" type="submit">Оформить звонок</button>
+                      <p class="form__notice">Ваши данные конфиденциальны</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </div>
   </body>
 </html>
